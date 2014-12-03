@@ -8,5 +8,6 @@
     "bower_components",
     "test"
   ],
-  "dependencies": {}
+  "dependencies": {},
+  "private": true
 }
