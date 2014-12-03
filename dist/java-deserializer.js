@@ -345,7 +345,7 @@ var JavaDeserializer = (function()
   return JavaDeserializer;
 }());
 
-JavaDeserializer.VERSION = '0.0.0';
+JavaDeserializer.VERSION = '0.1.0';
 root.JavaDeserializer = JavaDeserializer;
 
 
