@@ -4,16 +4,13 @@
     <title>java-deserializer demo</title>
     <link rel="stylesheet" href="./assets/normalize.css" />
     <link rel="stylesheet" href="./assets/main.css" />
-    <style>
-      /* begin demo embedded styles */
-
-      /* end demo embedded styles */
-    </style>
   </head>
   <body>
     <h1>java-deserializer demo</h1>
 
     <!-- begin demo markup -->
+
+    <pre id="output"></pre>
 
     <!-- end demo markup -->
 
@@ -26,8 +23,26 @@
     <script>
       /* begin demo script */
 
-      var n = java-deserializer();
-      console.log(n);
+      function loadResource(url, callback)
+      {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url);
+        xhr.responseType = 'arraybuffer';
+        xhr.onload = function() {
+          callback(null, this.response);
+        };
+        xhr.onerror = function(e) {
+          callback(e, null);
+        };
+
+        xhr.send();
+      };
+
+      loadResource('/demo/assets/ft_waypoint.obj', function(err, buf) {
+        var n = new javaDeserializer(buf);
+        var repr = n.getContents();
+        document.getElementById('output').innerHTML = JSON.stringify(repr, null, 2);
+      })
 
       /* end demo script */
     </script>
