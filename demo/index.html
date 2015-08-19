@@ -39,7 +39,7 @@
       };
 
       loadResource('/demo/assets/ft_waypoint.obj', function(err, buf) {
-        var n = new javaDeserializer(buf);
+        var n = new JavaDeserializer(buf);
         var repr = n.getContents();
         document.getElementById('output').innerHTML = JSON.stringify(repr, null, 2);
       })

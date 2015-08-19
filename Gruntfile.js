@@ -68,7 +68,8 @@ module.exports = function(grunt) {
         },
         files: [
           './demo/**/*',
-          './dist/<%= pkg.name %>.js'
+          './dist/<%= pkg.name %>.js',
+          './Gruntfile.js'
         ]
       },
       js: {
