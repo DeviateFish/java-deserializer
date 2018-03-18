@@ -146,6 +146,6 @@ class JavaDeserializer {
   }
 }
 
-JavaDeserializer.VERSION = '0.2.0';
+JavaDeserializer.VERSION = '0.3.1';
 
 export default JavaDeserializer;
