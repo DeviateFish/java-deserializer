@@ -1,4 +1,4 @@
-import StreamReader from './stream-reader';
+import StreamReader from './src/stream-reader';
 
 // Magic numbers
 const STREAM_MAGIC = 0xaced;

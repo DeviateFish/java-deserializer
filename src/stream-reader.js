@@ -58,8 +58,7 @@ class StreamReader {
   readUtf8String() {
     var length = this.readUint16();
     var str = '';
-    for (var i = 0; i < length; i++)
-    {
+    for (var i = 0; i < length; i++) {
       // TODO: Replace this with a proper utf8 reader.
       str += String.fromCharCode(this.readUint8());
     }

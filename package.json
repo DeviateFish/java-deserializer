@@ -1,7 +1,7 @@
 {
   "name": "java-deserializer",
   "version": "0.2.0",
-  "main": "dist/java-deserializer.min.js",
+  "main": "index.js",
   "description": "Simple java binary object reader (incomplete)",
   "repository": {
     "type": "git",
