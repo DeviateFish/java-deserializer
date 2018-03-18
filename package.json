@@ -1,6 +1,6 @@
 {
   "name": "java-deserializer",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "index.js",
   "description": "Simple java binary object reader (incomplete)",
   "repository": {
